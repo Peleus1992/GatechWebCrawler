@@ -66,9 +66,9 @@ while(!queue.isEmpty() && count <= limit && !stop) {
 I use BFS to crawl URLs. First, I use JSoup methods to get the whole source code of the seed URL. Then I visit all the HTTP links and put them into queue. In each the while loop, I poll out one URL string. The process ends when count reaches limit or there's not URLs in the queue.
 
 # 2. User Interface
-<img src="https://github.gatech.edu/wguo64/GatechWebCrawler/blob/master/app/src/main/res/drawable/Screenshot_2016-01-23-14-17-37.png" width="200" height="400" />
-<img src="https://github.gatech.edu/wguo64/GatechWebCrawler/blob/master/app/src/main/res/drawable/Screenshot_2016-01-23-14-12-09.png" width="200" height="400" />
-<img src="https://github.gatech.edu/wguo64/GatechWebCrawler/blob/master/app/src/main/res/drawable/Screenshot_2016-01-23-14-16-36.png" width="200" height="400" />
+<img src="https://github.com/Peleus1992/GatechWebCrawler/blob/master/app/src/main/res/drawable/Screenshot_2016-01-23-14-12-09.png" width="200" height="400" />
+<img src="https://github.com/Peleus1992/GatechWebCrawler/blob/master/app/src/main/res/drawable/Screenshot_2016-01-23-14-16-36.png" width="200" height="400" />
+<img src="https://github.com/Peleus1992/GatechWebCrawler/blob/master/app/src/main/res/drawable/Screenshot_2016-01-23-14-17-37.png" width="200" height="400" />
 
 # 3. Prons and Cons
 Prons: This crawler is simple to design. It uses BFS to search URLs while using SQLite database to prevent duplicate URLs. In the BFS, the crawler use JSoup which is Java library for working with real-world HTML. The JSoup can get the document of page and select elements from the document by applying tags or attributes such as "a[href]".
